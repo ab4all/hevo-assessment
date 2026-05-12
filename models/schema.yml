@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: customers
+    description: Customer level aggregated model
+
+    columns:
+      - name: customer_id
+        description: Unique customer identifier
+        tests:
+          - not_null
+          - unique
